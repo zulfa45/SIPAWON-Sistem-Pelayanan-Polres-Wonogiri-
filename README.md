@@ -1,59 +1,109 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="public/images/logo-polri.png" alt="Logo Polri" width="150">
 </p>
 
-## About Laravel
+<h1 align="center">SIPAWON (Sistem Pelayanan Polres Wonogiri) 👮‍♂️</h1>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<p align="center">
+  Platform aplikasi berbasis web untuk digitalisasi dan mempermudah layanan kepolisian bagi masyarakat di wilayah hukum Kabupaten Wonogiri.
+</p>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🌟 Tentang SIPAWON
 
-## Learning Laravel
+**SIPAWON (Sistem Pelayanan Polres Wonogiri)** adalah inisiatif "Kantor Polisi Virtual" yang dirancang menggunakan framework Laravel. Sistem ini mengintegrasikan berbagai layanan kepolisian sehingga masyarakat Wonogiri dapat mengurus administrasi dan melaporkan kejadian langsung dari perangkat mereka dengan lebih mudah, cepat, dan transparan.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+## ✨ Fitur Utama
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 👮‍♂️ Untuk Masyarakat (User)
+* **Pengajuan SKCK Online:** Formulir lengkap dengan integrasi unggah pas foto. Jika disetujui, warga dapat mencetak Sertifikat SKCK resmi berformat PDF.
+* **Perpanjangan SIM & STNK:** Pendaftaran dan penyerahan berkas awal secara digital.
+* **Laporan Pengaduan Terpadu:** Sistem pelaporan insiden/kejadian yang mendukung unggah foto bukti dan titik koordinat lokasi.
+* **Riwayat & Pelacakan (Tracking):** Memantau status pengajuan (*Menunggu, Diproses, Dijadwalkan, Selesai, Ditolak*).
+* **Portal Berita Kamtibmas:** Akses cepat ke informasi, berita, dan himbauan Kamtibmas terbaru dari Polres Wonogiri.
 
-## Laravel Sponsors
+### 🛡️ Untuk Petugas (Admin Panel)
+* **Dashboard Statistik Real-time:** Memantau jumlah total pengajuan harian secara sekilas.
+* **Manajemen Pengajuan Terpusat:** Verifikasi berkas warga, penentuan jadwal kedatangan, dan pemberian catatan/instruksi.
+* **Export & Cetak PDF Otomatis:** Fitur konversi data ke format dokumen resmi Polri (SKCK, Laporan Pengaduan) yang presisi (mendukung konfigurasi margin 1 halaman dan output foto).
+* **Manajemen Konten Berita (CMS):** Pembuatan dan pengelolaan artikel berita kepolisian.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 💻 Tech Stack (Teknologi)
 
-### Premium Partners
+* **Backend:** Laravel 12.x (PHP 8.2)
+* **Frontend:** Blade Templating, Tailwind CSS, Alpine.js
+* **Database:** MySQL
+* **PDF Generator:** barryvdh/laravel-dompdf
+* **Icon:** FontAwesome
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+## 🚀 Cara Instalasi (Local Development)
 
-## Contributing
+Ikuti langkah-langkah di bawah ini untuk menjalankan proyek SIPAWON di komputer Anda (Localhost).
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Persyaratan Sistem:
+- **PHP** >= 8.2 (Pastikan Ekstensi **GD** diaktifkan di `php.ini` untuk merender PDF & Gambar)
+- **Composer** 
+- **Node.js & NPM**
+- **MySQL** / MariaDB
 
-## Code of Conduct
+### Langkah Instalasi:
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+1. **Clone Repositori:**
+   ```bash
+   git clone https://github.com/zulfa45/SIPAWON-Sistem-Pelayanan-Polres-Wonogiri-.git
+   cd SIPAWON-Sistem-Pelayanan-Polres-Wonogiri-
+   ```
 
-## Security Vulnerabilities
+2. **Install Dependensi PHP & Node.js:**
+   ```bash
+   composer install
+   npm install
+   ```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+3. **Konfigurasi Environment:**
+   Salin file konfigurasi lalu sesuaikan pengaturan database Anda (terutama `DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD`).
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
 
-## License
+4. **Siapkan Database & Jalankan Migrasi:**
+   Buat database baru di MySQL (misal: `sipawon`), kemudian jalankan perintah migrasi beserta seeder (data *dummy* bawaan):
+   ```bash
+   php artisan migrate:fresh --seed
+   ```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+5. **Symlink Storage (Untuk Gambar):**
+   Agar foto profil dan foto unggahan warga dapat diakses oleh publik:
+   ```bash
+   php artisan storage:link
+   ```
+
+6. **Jalankan Aplikasi:**
+   Buka dua jendela terminal. Terminal 1 untuk menjalankan server PHP, Terminal 2 untuk memantau Tailwind CSS.
+   ```bash
+   # Terminal 1
+   php artisan serve
+
+   # Terminal 2
+   npm run dev
+   ```
+
+7. **Akses Website:**
+   Buka browser Anda dan kunjungi: `http://localhost:8000`
+
+## 🔑 Akses Login (Default)
+
+Saat sistem pertama kali dijalankan menggunakan Seeder, akun berikut akan otomatis dibuat:
+
+**Akun Administrator (Petugas/Polisi):**
+* **Email:** `admin@example.com`
+* **Password:** `password`
+
+**Akun Masyarakat Umum (User):**
+* **Email:** `test@example.com`
+* **Password:** `password`
+
+---
+> *Dikembangkan untuk Polres Wonogiri.* 🇮🇩
